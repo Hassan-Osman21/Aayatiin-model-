@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./home.css">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background:cyan;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding:  25px;
+        }
+
+        #h1_header {
+            color: blue;
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .navbar {
+            background: blue
+            padding 10px 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            margin: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .footer-bottom {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1rem;
+    background-color:red;
+}
+
+#footer {
+    background-color:burlywood;
+    color: black;
+    padding: 10px 200px;
+}
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1 id="h1_header">AAYATIIN MODEL SECONDARY SCHOOL</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="./vission&mission.html">Vision & Mission</a></li>
+            <li><a href="./regestration.html">Form Register</a></li>
+    
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div>
+            <h1 id="about_us"></h1>
+            <p class="main_p">Aayatiin model secondary school waa iskuul la aasaasay sanadkii 2020, wuxuuna ku yaalaa gubta-daynile-mogadisho-somalia. <br>
+                Iskuulkan waxaa loogu talagalay inuu ardayda siiyo waxbarasho tayo leh, isagoo siinaya fursado ay ku horumariyaan xirfadaha aqooneed, 
+                bulsho, iyo hogaaminta.</p>
+         </div>
+         <div class="main_p">
+            <h2 >Ujeedada iyo Himilada</h2>
+            <p >Ujeedada ugu weyn ee Magaca Iskuulka waa in la siiyo ardayda waxbarasho <br>dhammeystiran oo dhiirrigelisa kartida iyo hibooyinka ay leeyihiin. <br>
+                 Himiladeenu waa inaanu noqono iskuul hormuud u ah waxbarashada iyo horumarka bulshada,<br>
+                 isla markaana ardayda aan ka dhigno kuwo diyaar u ah caqabadaha mustaqbalka..</p>
+            <h2>Adeegyada aan Bixinno</h2>
+            <h3>1:Waxbarasho Sare </h3>
+            <p>:- Waxaan bixinnaa casharro iyo manhajyo kala duwan oo si qoto dheer u daboolaya maadooyinka kala duwan sida sayniska,<br>
+                xisaabta, suugaanta, taariikhda, iyo cilmiga bulshada. </p>
+            <h3>2.Kaalmo Dhinaca Shaqsiga:</h3>
+            <p>Macallimiintayada waxay ardayda siiyaan taageero gaar ah iyo talooyin<br> ku saabsan horumarka waxbarasho iyo nafsaaniga. 
+               </p>
+            <h3>3.Kulanada iyo Hawlaha Iskuulka:</h3>
+            <p>Kooxdayada macallimiinta ah waxay ka go'an tahay inay ardayda siiyaan waxbarasho tayo sare leh, iyadoo la adeegsanayo <br>
+                habab casri ah iyo qalab waxbarasho oo cusub. <br>
+                Shaqaalaha kale ee iskuulka ayaa sidoo kale ka shaqeeya inay <br>abuuraan deegaan ku habboon barashada iyo kobcinta ardayda.
+            </p>
+            <h3>4. Qiimaha</h3>
+            <p>Iskuulkayagu wuxuu aaminsan yahay in midnimada, daacadnimada, iyo shaqada adag ay yihiin aasaaska guusha. Waxaan ku dhiirrigelinaynaa <br>
+                ardayda inay noqdaan kuwa mas'uul ka ah ficilladooda iyo inay gacan ka geystaan horumarka bulshada..</p>
+            
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>AAYATIIN MODEL SECONDARY SCHOOL</h2>
+                <p> Naga soo biir oo qeyb ka noqo isbeddelka nololed ee waxbarashada!
+
+                </p>
+            </div>
+            
+            <footer id="footer">
+                <div class="footer-content">
+                    <div class="footer-section contact-info">
+                        <h3>Contact Us</h3>
+                        <p>Address: gubta-daynile-mogadisho-somalia</p>
+                        <p>Phone: +252 616352416</p>
+                        <p>Email: hassanosman@gmail.com</p>
+                    </div>
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        
+            
+        
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aaayatiin Model Secondary School. All rights reserved.</p>
+            </div>
+    </footer>
+      
+
+    <script>
+        let head = document.getElementsByClassName("main_p");
+        for (let SOM of head) {
+            SOM.style.color = "blue";
+            SOM.style.margin = "0.9%";
+            SOM.style.paddingLeft= ("3%")
+            SOM.style.paddingRight= ("4%")
+        }
+        let head_h1 = document.getElementsByClassName("h1");
+        for (let SOM of head_h1) {
+            SOM.style.margin = "2%";
+        }
+       my_title = document.getElementById("about_us"); 
+            my_title.innerHTML = "TAARIIKHDA SCHOOL"; 
+            my_title.style.color="red"
+            my_title.style.paddingLeft= ("4%")
+           
+
+            
+
+        
+      
+       
+
+
+
+    </script>
+
+    
+</body>
+</html>

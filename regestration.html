@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Aaayatiin Model Secondary School</title>
+    <link rel="stylesheet" href="./home.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background:cyan;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding:  25px;
+        }
+
+        #h1_header {
+            color: blue;
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .navbar {
+            background: blue
+            padding 10px 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            margin: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+       .registration-header {
+        text-align: center;
+        color: blueviolet;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1 id="h1_header">AAYATIIN MODEL SECONDARY SCHOOL</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./vission&mission.html">Vision & Mission</a></li>
+            <li><a href="register.html">Form Register</a></li>
+         
+        </ul>
+    </nav>
+
+
+    <header class="registration-header">
+        <h1>KU SOO DHOWOW AAYATIIN MODEL SCHOOL</h1>
+        <p>Fadlan buuxi foomka hoos ku qoran si aad ugu biirto iskuulkeena .</p>
+    </header>
+
+    <div class="container">
+        <h1>Register</h1>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required> <br> <br>
+            <label for="phone">PHONE</label>
+            <input type="tel" id="phone" name="phone" placeholder="enter your phone" required> <br> <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required> <br> <br>
+
+            <button type="submit" class="button">Submit</button> <br> <br>
+        </form>
+        <div id="successMessage" style="display: none;"><br>
+            Waad ku mahadsantahay isdiiwangalinta! Waxaan kugu soo jawaabi doonaa si dhaqsi ah. <br><br>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p>Address: gubta-daynile-mogadisho-somalia</p>
+                <p>Phone: +252 616352416</p>
+                <p>Email: hassanosman@gmail.com</p>
+            </div>
+           
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aaayatiin Model Secondary School. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+    <script>
+        const form = document.getElementById('registrationForm');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); 
+            successMessage.style.display = 'block'; 
+            form.reset(); 
+        });
+
+        
+    </script>
+</body>
+</html>
